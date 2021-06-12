@@ -1,0 +1,8 @@
+# playbook.yml
+---
+  - hosts: awsweb
+    remote_user: ansible
+    become: yes
+    roles:
+      - apache2
+      - mariadb
